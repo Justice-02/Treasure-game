@@ -1,0 +1,246 @@
+/* ==================================
+DIGITAL TREASURE HUNT ADVENTURE
+MAIN GAME DESIGN
+================================== */
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+font-family: Arial, sans-serif;
+min-height: 100vh;
+color: white;
+background: linear-gradient(
+to bottom,
+#071c36,
+#075985,
+#0e7490
+);
+overflow-x: hidden;
+}
+/* HEADER */
+header {
+background: #10213b;
+text-align: center;
+padding: 20px;
+border-bottom: 4px solid #ffc857;
+}
+header h1 {
+color: #ffc857;
+font-size: 30px;
+margin-bottom: 8px;
+}
+header p {
+color: white;
+font-size: 15px;
+}
+/* GENERAL SCREEN */
+.screen {
+width: 92%;
+max-width: 1100px;
+margin: 30px auto;
+}
+.hidden {
+display: none !important;
+}
+/* WELCOME SCREEN */
+#welcome-screen {
+min-height: 75vh;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+background:
+    linear-gradient(#071c3666, #071c36aa),
+    url("https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=1600")
+    center/cover;
+
+border: 4px solid #ffc857;
+border-radius: 20px;
+overflow: hidden;
+}
+.welcome-content {
+max-width: 700px;
+padding: 35px;
+background: #071c36d9;
+border-radius: 20px;
+}
+.welcome-content h2 {
+font-size: 35px;
+color: #ffc857;
+margin-bottom: 20px;
+}
+.welcome-content p {
+font-size: 18px;
+line-height: 1.7;
+margin-bottom: 15px;
+}
+/* BUTTONS */
+button {
+border: none;
+padding: 15px 25px;
+border-radius: 10px;
+font-size: 16px;
+font-weight: bold;
+cursor: pointer;
+transition: 0.3s;
+}
+#start-button,
+#next-button,
+#restart-button {
+background: linear-gradient(
+45deg,
+#f59e0b,
+#facc15
+);
+color: #17243a;
+margin-top: 20px;
+}
+button:hover {
+transform: scale(1.05);
+filter: brightness(1.1);
+}
+/* GAME INFORMATION */
+.game-information {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 15px;
+flex-wrap: wrap;
+background: #10213b;
+padding: 20px;
+border-radius: 12px;
+border: 2px solid #ffc857;
+}
+.game-information h3 {
+color: #ffc857;
+margin-bottom: 8px;
+}
+.score-board {
+background: #075985;
+padding: 15px;
+border-radius: 10px;
+font-size: 20px;
+}
+#score {
+color: #ffc857;
+}
+/* PROGRESS BAR */
+.progress-section {
+margin: 20px 0;
+}
+.progress-section p {
+margin-bottom: 8px;
+}
+.progress-container {
+height: 18px;
+background: #dbeafe;
+border-radius: 20px;
+overflow: hidden;
+}
+#progress-bar {
+width: 0%;
+height: 100%;
+background: linear-gradient(
+90deg,
+#16a34a,
+#a3e635
+);
+transition: width 0.5s ease;
+}
+/* INSTRUCTION BOX */
+.instruction-box {
+background: #fff7d6;
+color: #17243a;
+padding: 20px;
+border-radius: 12px;
+border-left: 7px solid #f59e0b;
+margin-bottom: 20px;
+}
+.instruction-box h3 {
+margin-bottom: 10px;
+color: #92400e;
+}
+/* GAME WORLD */
+#game-world {
+min-height: 380px;
+padding: 25px;
+background:
+    linear-gradient(#0c4a6e55, #78350f66),
+    url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1600")
+    center/cover;
+
+border: 4px solid #ffc857;
+border-radius: 15px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#game-content {
+width: 100%;
+min-height: 300px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+gap: 20px;
+background: #071c3666;
+border-radius: 15px;
+padding: 20px;
+}
+/* TREASURE OBJECTS */
+.treasure-object {
+font-size: 65px;
+cursor: pointer;
+user-select: none;
+transition: transform 0.3s;
+}
+.treasure-object:hover {
+transform: scale(1.2);
+}
+/* FEEDBACK */
+#feedback {
+text-align: center;
+font-size: 18px;
+font-weight: bold;
+padding: 20px;
+color: #facc15;
+min-height: 60px;
+}
+/* DRAG AND DROP */
+.drop-zone {
+min-width: 180px;
+min-height: 100px;
+border: 4px dashed #22c55e;
+background: #dcfce7;
+color: #14532d;
+border-radius: 15px;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 15px;
+}
+/* SCROLLING AREA */
+.scroll-area {
+width: 90%;
+height: 200px;
+overflow-y: auto;
+background: white;
+color: #17243a;
+border-radius: 10px;
+padding: 15px;
+}
+.scroll-item {
+padding: 20px;
+border-bottom: 1px solid #ccc;
+}
+/* FINAL SCREEN */
+#final-screen {
+min-height: 75vh;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+background: linear-gradient(
+    135deg,
