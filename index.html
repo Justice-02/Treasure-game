@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Treasure Hunt Adventure</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- GAME HEADER -->
+<header>
+    <h1>🏴‍☠️ Digital Treasure Hunt</h1>
+    <p>Basic 8 Mouse Skills Adventure</p>
+</header>
+
+<!-- WELCOME SCREEN -->
+<section id="welcome-screen" class="screen">
+    <div class="welcome-content">
+
+        <h2>Welcome, Brave Treasure Hunter!</h2>
+
+        <p>
+            A mysterious treasure is hidden on Treasure Island.
+            Complete six exciting challenges to discover it.
+        </p>
+
+        <p>
+            Are you ready for the adventure?
+        </p>
+
+        <button id="start-button">
+            START ADVENTURE
+        </button>
+
+    </div>
+</section>
+
+
+<!-- MAIN GAME SCREEN -->
+<main id="game-screen" class="screen hidden">
+
+    <section class="game-information">
+
+        <div>
+            <h3 id="level-title">Level 1</h3>
+            <p id="challenge-description">
+                Find the hidden treasure.
+            </p>
+        </div>
+
+        <div class="score-board">
+            <span>⭐ Score:</span>
+            <strong id="score">0</strong>
+            <span>/60</span>
+        </div>
+
+    </section>
+
+
+    <!-- PROGRESS BAR -->
+    <section class="progress-section">
+
+        <p>Adventure Progress</p>
+
+        <div class="progress-container">
+            <div id="progress-bar"></div>
+        </div>
+
+    </section>
+
+
+    <!-- INSTRUCTIONS -->
+    <section class="instruction-box">
+
+        <h3>📜 Your Mission</h3>
+
+        <p id="instructions">
+            Follow the instructions to complete the challenge.
+        </p>
+
+    </section>
+
+
+    <!-- GAME WORLD -->
+    <section id="game-world">
+
+        <div id="game-content">
+            <!-- JavaScript will create challenges here -->
+        </div>
+
+    </section>
+
+
+    <!-- FEEDBACK -->
+    <section id="feedback">
+        Your adventure begins here!
+    </section>
+
+
+    <!-- NEXT LEVEL BUTTON -->
+    <button id="next-button" class="hidden">
+        NEXT LEVEL →
+    </button>
+
+</main>
+
+
+<!-- FINAL SCREEN -->
+<section id="final-screen" class="screen hidden">
+
+    <div class="final-content">
+
+        <h1>🏆 TREASURE DISCOVERED!</h1>
+
+        <h2>Congratulations, Brave Hunter!</h2>
+
+        <p>
+            You have successfully completed all six challenges.
+        </p>
+
+        <h2 id="final-score">Your Score: 0/60</h2>
+
+        <button id="restart-button">
+            PLAY AGAIN
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- JAVASCRIPT -->
+<script src="script.js"></script>
+</body>
+</html>
